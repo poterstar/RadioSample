@@ -138,6 +138,8 @@ const RadioPlayer = ({ radios }: Props) => {
               bg: "white:alpha.20",
             }}
             onPress={togglePrevRadio}
+            isDisabled={previousRadio() >= 0 ? false : true}
+            disabled={previousRadio() >= 0 ? false : true}
           />
           <Image
             size={150}
@@ -170,6 +172,8 @@ const RadioPlayer = ({ radios }: Props) => {
             _pressed={{
               bg: "white:alpha.20",
             }}
+            isDisabled={nextRadio() >= 0 ? false : true}
+            disabled={nextRadio() >= 0 ? false : true}
             onPress={toggleNextRadio}
           />
         </HStack>
