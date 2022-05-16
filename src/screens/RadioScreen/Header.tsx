@@ -51,6 +51,8 @@ const Header = () => {
             _pressed={{
               bg: "orange.600:alpha.20",
             }}
+            isDisabled={currentPlayingRadio === null}
+            disabled={currentPlayingRadio === null}
             onPress={() => setCurrentPlayingRadio(null)}
           />
         </Box>
